@@ -11,13 +11,11 @@ export default function Page() {
   const [editingField, setEditingField] = useState(null);
   const [fieldId, setFieldId] = useState(0);
 
-  // Load from localStorage
   useEffect(() => {
     const raw = localStorage.getItem("form-fields");
     if (raw) setFields(JSON.parse(raw));
   }, []);
 
-  // Save to localStorage
   useEffect(() => {
     localStorage.setItem("form-fields", JSON.stringify(fields));
   }, [fields]);
@@ -32,10 +30,9 @@ export default function Page() {
   const onSubmit = (data) => {
     console.log("Submitted:", data);
 
-    // Save submitted data in localStorage
+
     localStorage.setItem("form-data", JSON.stringify(data));
 
-    // Optionally, show a success message or reset form
     alert("Data saved to localStorage!");
     reset(); // clear form inputs
   };
