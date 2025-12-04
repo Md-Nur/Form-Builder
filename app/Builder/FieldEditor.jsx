@@ -44,7 +44,7 @@ export default function FieldEditor({ field, onSave, close }) {
             </select>
           </div>
 
-          <div className="flex gap-3">
+          <div className="flex gap-3 items-center h-4">
             <label>Required</label>
             <input
               type="checkbox"
