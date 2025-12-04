@@ -34,13 +34,13 @@ export default function Page() {
     localStorage.setItem("form-data", JSON.stringify(data));
 
     alert("Data saved to localStorage!");
-    reset(); // clear form inputs
+    reset();
   };
 
   return (
     <main className="m-3 p-3">
       <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* LEFT SIDE – builder */}
+      
         <div>
           <h1 className="text-2xl mb-3 font-bold">Form Builder</h1>
 
@@ -48,7 +48,7 @@ export default function Page() {
             className="px-4 py-2 bg-blue-600 text-white rounded"
             onClick={() => setEditingField({})}
           >
-            + Add Field
+            Add Field
           </button>
 
           <FieldList
@@ -79,7 +79,6 @@ export default function Page() {
           )}
         </div>
 
-        {/* RIGHT SIDE – preview */}
         <div>
           <h1 className="text-2xl mb-3 font-bold">Preview</h1>
 
