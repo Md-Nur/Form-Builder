@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import FieldList from "./builder/FieldList";
-import FieldEditor from "./builder/FieldEditor";
-import RenderField from "./builder/RenderField";
+import FieldList from "@/app/Builder/FieldList";
+import FieldEditor from "@/app/Builder/FieldEditor";
+import RenderField from "@/app/Builder/RenderField";
 import { useForm } from "react-hook-form";
 
 export default function Page() {
